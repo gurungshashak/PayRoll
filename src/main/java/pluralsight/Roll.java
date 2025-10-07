@@ -5,7 +5,7 @@ public class Roll {
     public static void main(String[] args) {
 
         try {
-            FileReader fileReader =new FileReader("src/main/resources/employees.txt");
+            FileReader fileReader =new FileReader("src/main/resources/employees.csv");
             BufferedReader bufReader =new BufferedReader(fileReader);
             String line;
             bufReader.readLine();
@@ -17,10 +17,9 @@ public class Roll {
                 int id=Integer.parseInt(rollLine[0]);
                 String name=rollLine[1];
                 double salary=Double.parseDouble(rollLine[2]);
-                int hourWorked=Integer.parseInt(rollLine[3]);
-
-
+                double payRate=Double.parseDouble(rollLine[3]);
             }
+
 
 
         } catch (IOException e) {
